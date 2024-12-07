@@ -1,0 +1,10 @@
+<h1>Hello</h1>
+<!-- loop the array in here -->
+<div *ngFor="let item of list">{{item}}</div>
+<button (click)="convertIntoGerman()">
+    convertIntoGerman
+</button>
+<p>Enter the number</p>
+<input type="text" #inputValue />
+<button (click)="isGermanNumber(inputValue.value)">Check is German</button>
+<router-outlet></router-outlet>
